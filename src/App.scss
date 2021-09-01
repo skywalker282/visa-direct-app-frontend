@@ -16,7 +16,7 @@
 }
 
 .app-hero {
-  padding: 10% 2%;
+  padding: 7% 2%;
   background-color: #2e2e2e;
   color: #fff;
   display: flex;
@@ -34,39 +34,39 @@
 }
 
 .app-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5% 30%;
-  background-color: #7fffd4;
+  height: 800px;
   border-radius: 10px;
-  a {
+  width: 100%;
+  display: flex;
+  .left-block {
+    width: 23%;
+    background-color: #2e2e2e;
+    height: 100%;
+  }
+  .body-content {
+    width: 77%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2% 5%;
-    background-color: #0e0e0e;
-    color: #7fffd4;
-    border-radius: 15px;
-    text-decoration: none;
-    font-size: 26px;
-    margin: 3em auto;
-    &:hover {
-      transition: 1s all ;
-      background-color: #000;
+    height: 100%;
+    .signin-form {
+      width: 50%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #d6d6d6;
+      padding: 1.5em;
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5em auto;
+      }
     }
-  }
-  p {
-    font-size: 20px;
-    margin: 2% auto;
-    text-align: center;
   }
 }
 
 .footer {
   width: 100%;
   padding: 5% 2% 1%;
-  background-color: #7fffd44f;
+  background-color: #7fffd4;
   .about-block {
     display: flex;
     justify-content: center;
