@@ -1,0 +1,84 @@
+
+.contentTitle {
+    text-align: center;
+    font-family: 'roboto-bold';
+    margin-bottom: 25px;
+    color:  #1283df;
+}
+.billAction {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.accountPanel {
+    width: 100%!important;
+    padding: 3rem 5px;
+    display: flex;
+    justify-content: space-between;
+    .lastTransaction {
+        .transaction {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            padding: 10px;
+            border: 1px solid #c7c7c7;
+            height: 350px;
+            overflow-y: hidden;
+            &:hover {
+                overflow-y: scroll;
+            }
+            .transCard {
+                box-shadow: 0px 0px 5px #c7c7c7;
+                border-radius: 10px;
+                margin: 10px 5px;
+                padding: 5px;
+                width: 95%!important;
+                font-size: 10px;
+                display: flex;
+                justify-content: space-between;
+                .transBody {
+                    display: flex;
+                    flex-direction: column;
+                    align-items:  space-between;
+                    .bodyContent {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .transFoot {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .balanceStatus {
+        span {
+            color: #fff;
+        }
+        width: 300px;
+        .statusHead {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #1283df;
+            font-family: "roboto-bold";
+            border-radius: 10px 10px 0px 0px;
+        }
+        .statusBody {
+            width: 100%;
+            .statusRow {
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #161616;
+                &:nth-child(2n) {
+                    background-color: #0e0e0e;
+                }
+            }
+        }
+    }
+}

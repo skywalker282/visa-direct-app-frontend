@@ -8,6 +8,11 @@
   src: url('./styles/Roboto/Roboto-Light.ttf')
 }
 
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('./styles/Roboto/Roboto-Bold.ttf')
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,17 +21,18 @@
 }
 
 .app-hero {
-  padding: 7% 2%;
-  background-color: #2e2e2e;
+  padding: 5% 2%;
+  background-color: #161616;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   h1 {
-    margin: .3em 0;
+    margin: 1em 0;
     text-align: center;
+    font-family: "roboto-bold";
+    color: #1283df;
     @media screen and (max-width: 768px) {
       font-size: 22px;
     }
@@ -40,33 +46,143 @@
   display: flex;
   .left-block {
     width: 23%;
-    background-color: #2e2e2e;
+    background-color: #1f1f1f;
     height: 100%;
   }
   .body-content {
     width: 77%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    overflow: hidden;
+    padding: 0 auto 3em;
+    &:hover {
+      overflow-y: scroll;
+    }
+    nav {
+      width: 100%;
+      padding: 0;
+      background-color: #1283df;
+      .nav-list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        align-items: center;
+        margin: 0 auto 2rem;
+        li {
+          font-size: 18px;
+          font-family: "roboto-light";
+          padding: 1rem 1rem;
+          border-bottom: 2px solid #1283df;
+          a {
+            text-decoration: none;
+            color: #2e2e2e;
+          }
+          &:hover {
+            border-bottom: 2px solid #1f1f1f;
+            color: #1f1f1f;
+            cursor: pointer;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
     .signin-form {
       width: 50%;
       border-radius: 10px;
       box-shadow: 0px 0px 10px #d6d6d6;
       padding: 1.5em;
-      .input-field {
+      margin: 2rem auto;
+      .input-field, option {
         display: flex;
         flex-direction: column;
         margin: 1.5em auto;
+        label {
+          font-size: 18px;
+          font-family: 'roboto-light';
+        }
+        input, select, option {
+          height: 27px;
+          border-radius: 3px;
+          border: 1px solid #b8b8b8;
+          padding: 0 5px;
+          background-color: transparent;
+          margin-top: 5px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .agree {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        input {
+          margin-right: 1rem;
+          cursor: pointer;
+        }
+      }
+      .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2.5rem;
+        input {
+          background-color: #1283df;
+          color: #007c7c;
+          font-family: "roboto-bold";
+          font-size: 20px;
+          padding: .5rem 5rem;
+          border-radius: 20px;
+          border: 2px solid #1283df;
+          cursor: pointer;
+          &:hover {
+            color: #1283df;
+            background-color: transparent;
+          }
+        }
       }
     }
   }
 }
+.tab-content {
+  width: 100%!important;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-family: 'roboto-bold';
+    color: #1283df
+  }
+  .tab-pane {
+    width: 100%!important;
+  }
+}
+
+// .content-pannel {
+//   height: 80vh;
+//   overflow-y: scroll;
+// }
+
+.connect-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 15%;
+  form {
+    width: 100%;
+    .form-group {
+      margin: 1rem auto;
+    }
+    .form-check-label {
+      margin: 1.5rem 0;
+    }
+  }
+}
+
 
 .footer {
   width: 100%;
-  padding: 5% 2% 1%;
-  background-color: #7fffd4;
+  padding: 1.5% 2% 1%;
+  background-color: #1f1f1f;
   .about-block {
     display: flex;
     justify-content: center;
@@ -84,15 +200,20 @@
       }
       h3 {
         text-align: center;
-        font-family: 'roboto-thin';
+        font-family: 'roboto-light';
+        color: #1283df;
         margin-bottom: 1em;
       }
       p, address {
         text-align: center;
+        color: #fff;
       }
       a {
         text-decoration: none;
-        font-family: 'roboto-light';
+        color: #fff;
+        &:hover {
+          font-family: 'roboto-light';
+        }
       }
     }
   }

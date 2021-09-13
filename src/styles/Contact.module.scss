@@ -1,0 +1,44 @@
+
+.contacts {
+    width: 600px!important;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    overflow-y: hidden;
+    &:hover {
+        overflow-y: scroll;
+    }
+    .contactCard {
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #5c5c5c;
+        font-size: 14px;
+        .contactIdentity {
+            display: flex;
+            align-items: center;
+            padding-bottom: 0px;
+            .contactProfile {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .contactContent {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                margin-bottom: 0px;
+            }
+        }
+        .contactAction {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+    }
+}

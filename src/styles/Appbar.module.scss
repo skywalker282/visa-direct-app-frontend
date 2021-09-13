@@ -7,10 +7,10 @@
     padding: 0 5% 0 5%;
     justify-content: space-between;
     align-items: center;
-    a {
-        color: #7fffd4;
+    .closeIcon {
+        color: #1283df;
         text-decoration: none;
-        padding: .3em;
+        padding: .5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,5 +18,11 @@
         &:hover {
             background-color: #000000;
         }
+    }
+    .brandLogo {
+        font-family: 'roboto-bold';
+        border-radius: 0px;
+        color: #1283df;
+        text-decoration: none;
     }
 }
