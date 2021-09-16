@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import { Button, Form, FormGroup, Label, Input, FormText, TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Button, Badge, Form, FormGroup, Label, Input, FormText, TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Account from './Account';
 import Notification from './Notification';
 import Contact from './Contact';
@@ -17,14 +17,14 @@ const Panel = props => {
         <>
 
             <div className="app-hero">
-                <h2>Express Transfert Platform</h2>
+                <h2 className="aside-test">Express Transfert Platform</h2>
             </div>
             <div className={classes.panel}>
                 <div className={classes.aside}>
-                    <h4 className="">EXPRESS TRANSFERT</h4>
-                    <span>Transférer votre argent en sécurité et sans limites</span>
-                    <p>Avec votre compte Express Trans , vous pouvez dès alors soutenir vos proches utilisant Visa direct partout sur la planète</p>
-                    <span>Express Transfert 2021. All rights reserved</span>
+                    <h4 className={classes.asideText}>EXPRESS TRANSFERT</h4>
+                    <span className={classes.asideText}>Transférer votre argent en sécurité et sans limites</span>
+                    <p className={classes.asideText}>Avec votre compte Express Trans , vous pouvez dès alors soutenir vos proches utilisant Visa direct partout sur la planète</p>
+                    <span className={classes.asideText}>Express Transfert 2021. All rights reserved</span>
                 </div>
                 <div className={classes.content}>
                     <Nav tabs>
@@ -42,7 +42,7 @@ const Panel = props => {
                                 onClick={() => { toggle('2'); }}
                             >
                                 Notifications
-          </NavLink>
+                            </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
@@ -50,7 +50,7 @@ const Panel = props => {
                                 onClick={() => { toggle('3'); }}
                             >
                                 Contact
-          </NavLink>
+                            </NavLink>
                         </NavItem>
                     </Nav>
                     <div className={classes.accountPanel}>

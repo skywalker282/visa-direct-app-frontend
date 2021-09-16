@@ -7,10 +7,10 @@ const Account = props => {
         <>
             <div className={classes.accountPanel}>
                 <div className={classes.lastTransaction}>
-                    <h4 className={classes.contentTitle}>Last transaction</h4>
+                    <h4 className={classes.contentTitle}>LAST TRANSACTION</h4>
                     <div className={classes.transaction}>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -19,11 +19,11 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -32,11 +32,11 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -45,11 +45,11 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -58,11 +58,11 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -71,11 +71,11 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -84,11 +84,11 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                         <div className={classes.transCard}>
-                            <p className={classes.transBody}>
+                            <div className={classes.transBody}>
                                 <div className={classes.bodyContent}>
                                     <span>Bénéficiaire</span>
                                     <span>{`Alexandre Tattoo`}</span>
@@ -97,13 +97,13 @@ const Account = props => {
                                     <span>Montant</span>
                                     <span>{`${100} ${'EUR'}`}</span>
                                 </div>
-                            </p>
-                            <smal className={classes.transFoot}>22/09/2020</smal>
+                            </div>
+                            <small className={classes.transFoot}>22/09/2020</small>
                         </div>
                     </div>
                 </div>
                 <div className={classes.balanceStatus}>
-                    <h4 className={classes.contentTitle}>Mon portefeuille</h4>
+                    <h4 className={classes.contentTitle}>MY PORTFOLIO</h4>
                     <p className={classes.statusHead}>
                         <span>Devises</span>
                         <span>Montant</span>
