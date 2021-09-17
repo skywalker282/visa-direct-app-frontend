@@ -1,13 +1,16 @@
 import { React, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import classes from '../styles/Signup.module.scss'
+import classes from '../styles/Signup.module.scss';
+import dotenv from 'dotenv';
 import AppBar from './Appbar'
 import { Button, Form, FormGroup, Label, Input, FormText, TabContent, TabPane, Nav, NavItem, NavLink, Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Footer from './Footer';
 import classnames from 'classnames';
 import Sigin from './Signin'
 import SignIn from './Signin';
-import signUp from '../utils/signUp'
+import signUp from '../utils/signUp';
+
+dotenv.config();
 
 const SignUp = props => {
     const history = useHistory();

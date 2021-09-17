@@ -1,10 +1,13 @@
 
 import axios from 'axios';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const signUp = async ({userName, password, cardNumber}) => {
     const user = await axios({
         method: 'post',
-        url: 'http://localhost:7000/user',
+        url: `http://localhost:7000/user`,
         data: {
             userName: userName,
             password: password,
